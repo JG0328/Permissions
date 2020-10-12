@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16"
+        android:layout_margin="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +20,7 @@
             android:id="@+id/txtTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16"
+            android:layout_marginBottom="16dp"
             android:text="@string/title"
             android:textColor="@android:color/primary_text_dark"
             android:textSize="24sp" />
@@ -41,7 +41,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/storage_title"
-                    android:textColor="@android:color/primary_text_dark"
+                    android:textColor="@android:color/secondary_text_dark_nodisable"
                     android:textSize="22sp" />
 
                 <TextView
@@ -49,7 +49,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/storage"
-                    android:textColor="@android:color/primary_text_dark"
+                    android:textColor="@android:color/secondary_text_dark_nodisable"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -67,10 +67,11 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="285dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
@@ -78,19 +79,23 @@
                     android:id="@+id/locationTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/location_title" />
+                    android:text="@string/location_title"
+                    android:textColor="@android:color/secondary_text_dark_nodisable"
+                    android:textSize="22sp" />
 
                 <TextView
                     android:id="@+id/locationDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/location" />
+                    android:text="@string/location"
+                    android:textColor="@android:color/secondary_text_dark_nodisable" />
             </LinearLayout>
 
             <Switch
-                android:id="@+id/switch3"
+                android:id="@+id/swLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:text="Switch" />
 
@@ -99,10 +104,11 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="285dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
@@ -110,13 +116,16 @@
                     android:id="@+id/cameraTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/camera_title" />
+                    android:text="@string/camera_title"
+                    android:textColor="@android:color/secondary_text_dark_nodisable"
+                    android:textSize="22sp" />
 
                 <TextView
                     android:id="@+id/cameraDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/camera" />
+                    android:text="@string/camera"
+                    android:textColor="@android:color/secondary_text_dark_nodisable" />
 
             </LinearLayout>
 
@@ -124,9 +133,111 @@
                 android:id="@+id/swCamera"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:text="Switch" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/phoneTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_title"
+                    android:textColor="@android:color/secondary_text_dark_nodisable"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/phoneDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textColor="@android:color/secondary_text_dark_nodisable" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/swPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Switch" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/contactsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contacts_title"
+                    android:textColor="@android:color/secondary_text_dark_nodisable"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/contactsDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contacts"
+                    android:textColor="@android:color/secondary_text_dark_nodisable" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/swContacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Switch" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blackBackground"
+                android:text="@string/txt_cancel"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blackBackground"
+                android:text="@string/txt_continue"
+                android:textColor="@color/colorPrimaryDark" />
         </LinearLayout>
 
     </LinearLayout>
