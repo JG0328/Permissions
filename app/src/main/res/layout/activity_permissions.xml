@@ -20,7 +20,7 @@
             android:id="@+id/btnStorage"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/blackBackground"
+            android:backgroundTint="@color/backgroundMain"
             android:text="@string/storage_title"
             android:textColor="@color/colorPrimaryDark" />
 
@@ -28,7 +28,7 @@
             android:id="@+id/btnLocation"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/blackBackground"
+            android:backgroundTint="@color/backgroundMain"
             android:text="@string/location_title"
             android:textColor="@color/colorPrimaryDark" />
 
@@ -36,7 +36,7 @@
             android:id="@+id/btnCamera"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/blackBackground"
+            android:backgroundTint="@color/backgroundMain"
             android:text="@string/camera_title"
             android:textColor="@color/colorPrimaryDark" />
 
@@ -44,7 +44,7 @@
             android:id="@+id/btnPhone"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/blackBackground"
+            android:backgroundTint="@color/backgroundMain"
             android:text="@string/phone_title"
             android:textColor="@color/colorPrimaryDark" />
 
@@ -52,7 +52,7 @@
             android:id="@+id/btnContacts"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/blackBackground"
+            android:backgroundTint="@color/backgroundMain"
             android:text="@string/contacts_title"
             android:textColor="@color/colorPrimaryDark" />
     </LinearLayout>
