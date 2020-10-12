@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Switch swStorage, swLocation, swCamera, swPhone, swContacts;
     private Button btnCancel, btnContinue;
-    private ConstraintLayout mainLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
         btnCancel = findViewById(R.id.btnCancel);
         btnContinue = findViewById(R.id.btnContinue);
-
-        mainLayout = findViewById(R.id.mainLayout);
 
         if (isGranted(PM_STORAGE)) swStorage.setChecked(true);
         if (isGranted(PM_LOCATION)) swLocation.setChecked(true);
